@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.form-body{
+    background: rgb(168, 9, 23);;
+    height: 100vh;
+}
+.form-container{
+    display: flex;
+    height: 98vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.form-container .form-wrap{
+    background: #eee;
+    width: 40%;
+    padding: 15px 20px;
+    border-radius: 5px;/**/
+    height: 23%;
+}
+.form-container .form-wrap h2{
+    text-align: center;
+    margin: 0px 0px 20px;
+    font-size: 20px;
+    /* color: rgba(212, 12, 12, 0); */
+    color: rgba(0,0,0,0.6);
+}
+.form-container .form-wrap .form-box{
+    margin: 0px 0px 15px;
+}
+
+.form-container .form-wrap .form-box input[type="text"]{
+    padding: 5px 8px;
+    border-radius: 3px;
+    border: 1px solid #353535;
+    width: 100%;
+}
+.form-container .form-wrap .form-submit{
+    display: flex;
+    /* justify-content: center; */
+}
+.form-container .form-wrap .form-submit input[type="submit"],
+.form-container .form-wrap .form-submit input[type="reset"]{
+    padding: 4px 10px;
+    border: none;
+    border-radius: 2px;
+    background: rgb(168, 9, 23);;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+.form-container .form-wrap .form-submit input[type="reset"]{
+    margin-left: 2rem;
+}
+.form-container .form-wrap .form-submit input[type="submit"]:hover,
+.form-container .form-wrap .form-submit input[type="reset"]:hover{
+    background: red;
+    color: #fff;
+}
+
+/*  */
+.form-container .form-wrap .form-submit a{
+    padding-left: 2rem;
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+}
+.form-container .form-wrap .form-submit a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+
+
+/* media query */
+@media screen and (max-width: 340px){
+    .form-container .form-wrap{
+        width: 100%;
+        height: 25%;
+        margin: .7rem;
+        
+    }
+    .form-container .form-wrap .form-submit input[type="submit"],
+    .form-container .form-wrap .form-submit input[type="reset"],
+    .form-container .form-wrap .form-submit a{
+        margin-top: 2.5rem;
+    }
+    .form-container .form-wrap .form-box input[type="text"]{
+        padding: 5px 8px;
+        border-radius: 3px;
+        border: 1px solid #353535;
+        width: 100%;  
+        display: flex;
+    }
+}
+@media screen and (max-width: 568px){
+     .form-container .form-wrap{
+        width: 100%;
+        margin: .8rem;
+        object-fit: cover;
+
+    }
+    .form-container .form-wrap .form-submit input[type="submit"],
+    .form-container .form-wrap .form-submit input[type="reset"],
+    .form-container .form-wrap .form-submit a{
+        margin-top: 1.5rem;
+    }
+}
+@media screen and (min-width: 768px){
+    .form-body{
+        margin: 0;
+    }
+    .form-container .form-wrap{
+        width: 100%;
+        margin: 1.5rem;
+    }
+    .form-container .form-wrap .form-submit input[type="submit"],
+    .form-container .form-wrap .form-submit input[type="reset"],
+    .form-container .form-wrap .form-submit a{
+        margin-top: 1.5rem;
+    }
+}
+@media screen and (min-width: 1024px){
+    .form-container .form-wrap{
+        width: 50%;
+        margin: 1.5rem;
+    }
+    .form-container .form-wrap .form-submit input[type="submit"],
+    .form-container .form-wrap .form-submit input[type="reset"],
+    .form-container .form-wrap .form-submit a{
+        margin-top: 1.5rem;
+    }
+}
+@media screen and (min-width: 1024px){
+    .form-container .form-wrap{
+        width: 40%;
+        margin: 1.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-container .form-wrap .form-submit input[type="submit"],
+    .form-container .form-wrap .form-submit input[type="reset"],
+    .form-container .form-wrap .form-submit a{
+        margin-top: .5rem;
+    }
+}
+
+
+/* ============================== resend otp ============================= */
+
+.resend-body{
+    background: rgb(168, 9, 23);;
+    height: 100vh;
+}
+.resend-container{
+    display: flex;
+    height: 98vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.resend-container .form-wrap{
+    background: #eee;
+    width: 40%;
+    padding: 15px 20px;
+    border-radius: 5px;/**/
+    height: 23%;
+}
+.resend-container .form-wrap h2{
+    text-align: center;
+    margin: 0px 0px 20px;
+    font-size: 20px;
+    /* color: rgba(212, 12, 12, 0); */
+    color: rgba(0,0,0,0.6);
+}
+.resend-container .form-wrap .form-box{
+    margin: 0px 0px 15px;
+}
+
+.resend-container .form-wrap .form-box input[type="text"]{
+    padding: 5px 8px;
+    border-radius: 3px;
+    border: 1px solid #353535;
+    width: 100%;
+}
+.resend-container .form-wrap .form-submit{
+    display: flex;
+    /* justify-content: center; */
+}
+.resend-container .form-wrap .form-submit input[type="submit"],
+.resend-container .form-wrap .form-submit input[type="reset"]{
+    padding: 4px 10px;
+    border: none;
+    border-radius: 2px;
+    background: rgb(168, 9, 23);;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+.resend-container .form-wrap .form-submit input[type="reset"]{
+    margin-left: 2rem;
+}
+.resend-container .form-wrap .form-submit input[type="submit"]:hover,
+.resend-container .form-wrap .form-submit input[type="reset"]:hover{
+    background: red;
+    color: #fff;
+}
+
+/*  */
+.resend-container .form-wrap .form-submit a{
+    padding-left: 2rem;
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+}
+.resend-container .form-wrap .form-submit a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+
+
+/* media query */
+@media screen and (max-width: 340px){
+    .resend-container .form-wrap{
+        width: 100%;
+        height: 25%;
+        margin: .7rem;
+        
+    }
+    .resend-container .form-wrap .form-submit input[type="submit"],
+    .resend-container .form-wrap .form-submit input[type="reset"],
+    .resend-container .form-wrap .form-submit a{
+        margin-top: 2.5rem;
+    }
+    .resend-container .form-wrap .form-box input[type="text"]{
+        padding: 5px 8px;
+        border-radius: 3px;
+        border: 1px solid #353535;
+        width: 100%;  
+        display: flex;
+    }
+}
+@media screen and (max-width: 568px){
+     .resend-container .form-wrap{
+        width: 100%;
+        margin: .8rem;
+        object-fit: cover;
+
+    }
+    .resend-container .form-wrap .form-submit input[type="submit"],
+    .resend-container .form-wrap .form-submit input[type="reset"],
+    .resend-container .form-wrap .form-submit a{
+        margin-top: 1.5rem;
+    }
+}
+@media screen and (min-width: 768px){
+    .resend-body{
+        margin: 0;
+    }
+    .resend-container .form-wrap{
+        width: 100%;
+        margin: 1.5rem;
+    }
+    .resend-container .form-wrap .form-submit input[type="submit"],
+    .resend-container .form-wrap .form-submit input[type="reset"],
+    .resend-container .form-wrap .form-submit a{
+        margin-top: 1.5rem;
+    }
+}
+@media screen and (min-width: 1024px){
+    .resend-container .form-wrap{
+        width: 50%;
+        margin: 1.5rem;
+    }
+    .resend-container .form-wrap .form-submit input[type="submit"],
+    .resend-container .form-wrap .form-submit input[type="reset"],
+    .resend-container .form-wrap .form-submit a{
+        margin-top: 1.5rem;
+    }
+}
+@media screen and (min-width: 1024px){
+    .resend-container .form-wrap{
+        width: 40%;
+        margin: 1.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .resend-container .form-wrap .form-submit input[type="submit"],
+    .resend-container .form-wrap .form-submit input[type="reset"],
+    .resend-container .form-wrap .form-submit a{
+        margin-top: .5rem;
+    }
+}
+

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="icon" href="https://ml05hsq22bvh.i.optimole.com/HSbSpOQ-yrVxP89k/w:32/h:32/q:auto/https://manusia.ai/wp-content/uploads/2021/03/cropped-ManUsIA-Logo-1.png" sizes="32x32" />
+    <link rel="stylesheet" href="stylessheets.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--header-->  
+<header class="header" id="header">
+    
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"><img src="images/cropped-ManUsIA-Logo.png" alt=""></a>
+
+    <nav class="navbar" id="nav-bar">
+        <a href="index.html" class="nav_link active-link">Home</a>
+        <a href="about.html" class="nav_link active-link">About Us</a>
+        <a href="service.html" class="nav_link active-link">Services</a>
+        <a href="contact.html" class="nav_link active-link">Contact Us</a>
+        <a href="https://in.linkedin.com/" class="media active-link" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        <a href="https://www.facebook.com/" class="media active-link" target="_blank">
+            <i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.instagram.com/" class="media active-link" target="_blank">
+            <i class="fab fa-instagram-square"></i></a>
+        <a href="#" class="nav_dark media active-link">
+            <span class="change-theme-name">mode</span> 
+            <i class="fas fa-moon change-theme" id="theme-button"></i>
+        </a>
+        </nav>
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
+     
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here...">
+        <label for="search-bar" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+</header>
+
+<!--loginform-->
+
+<div class="bodycontainer">     
+    <i class="fas fa-times" id="loginclose"></i>
+    <div class="logincontainer">  
+        <div class="bluebg">
+            <div class="box signin">
+                <h2>Already Have An Account ?</h2>
+                <button class="signinBtn">Sign in</button>
+            </div>
+            <div class="box signup">
+                <h2>Don't Have An Account ?</h2>
+                <button class="signupBtn">Sign up</button>
+            </div>
+        </div>
+        <div class="formBx active">    
+            <div class="form signinForm">
+                <form>
+                    <h3>Sign In</h3>
+                    <input type="text" placeholder="Email Address" required style="text-transform: none;">
+                    <input type="password" placeholder="Password" required style="text-transform: none;">
+                    <span class="or-part">Or</span>
+                    <input type="password" placeholder="Hash Code" style="text-transform: none;">
+                    <input type="submit" value="Login">
+                    <br><a href="forgot.html" class="forgot">Forgot Password?</a>
+                </form>
+            </div>
+
+            <div class="form signupForm">
+                <form onsubmit="return validation()" name="captchaform"> <!--==============-->
+                    <h3><span>Sign Up</span></h3>
+                    <input type="text" placeholder="Username" id="username" style="text-transform: none;">
+                    <span id="usererror" style="font-weight: bold; color: #fff; font-size: 1.3rem;"></span>
+                    
+                    <input type="email" placeholder="Email Address" id="email" style="text-transform: none;">
+                    <span id="emailerror" style="font-weight: bold; color: #fff; font-size: 1.3rem;"></span>
+                    
+                    <input type="password" placeholder="Password" id="password" style="text-transform: none;">
+                    <span id="passworderror" style="font-weight: bold; color: #fff; font-size: 1.3rem;"></span>
+                    
+                    <input type="password" placeholder="Confirm Password" id="cpassword" style="text-transform: none;">
+                    <span id="cpassworderror" style="font-weight: bold; color: #fff; font-size: 1.3rem;"></span>
+                    
+                    <input type="checkbox" id="remember">
+                    <label for="remember">I <span>a</span>gree <span>T</span>o <span>t</span>he <a href="#">Terms & Conditions</a></label>
+
+                    <div class="captcha">
+                        <div id="captchaValue">ssss</div>
+                        <input type="text" name="" placeholder="Enter Captcha" class="ci" id="inputCaptcha" style="text-transform: none;">
+                        <span id="captchaerror" style="font-weight: bold; color: #fff; font-size: 1.3rem; right: 0; margin-top: 2px; padding-left: 5px;"></span>
+                    </div>
+                    
+                    <input type="submit" value="Register" id="submitbutton">
+                    <a href="resend.html"><input type="button" value="Resend OTP"></a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <!--home-->
+    <section class="home" id="home">
+        <!-- <img src="" alt="" class="home__img"> -->
+        <div class="home__img"></div>
+        <!--chng img to div-->
+        <!-- <video src="images/y2mate.com - growing network connection around the world global internet concept blue version eogag0 1te  D_1080p.mp4" class="home__img" loop autoplay muted></video> -->
+        <div class="home__container container grid">
+            <div class="home__data">
+                <span class="home__data-subtitle" data-aos="fade-right" data-aos-delay="1000">Complete AI Driven Autonomous Solution</span>
+                <h1 class="home__data-title">
+                    <span data-aos="fade-right" data-aos-delay="1500" data-aos-duration="2000">COMPLETE UAS
+                        SERVICES</span>
+                    <br><span data-aos="fade-right" data-aos-delay="2000" data-aos-duration="2000">PROVIDED BY
+                        EXPERINCED</span>
+                    <br><span data-aos="fade-right" data-aos-delay="2500" data-aos-duration="2000">UAS OPERATOR AND
+                        AI</span>
+                    <br><span data-aos="fade-right" data-aos-delay="3000" data-aos-duration="2000">EXPERTS</span>
+                </h1>
+                <a href="#" class="button" data-aos="fade-right" data-aos-delay="3000" data-aos-duration="2000">Request
+                    Demo</a>
+                <!--extra button add & style add-->
+                <a style="margin-left: 20px;" href="contact.html" class="button" data-aos="fade-right" data-aos-delay="3000"
+                    data-aos-duration="2000">Contact Us</a>
+            </div>
+
+            <!-- <div class="home__info"
+            data-aos="fade-left"
+            data-aos-delay="3000"
+            data-aos-duration="2000">
+                <div>
+                    <span class="home__info-title">our success stories</span>
+                    <a href="#" class="button button--flex button--link home__info-button">
+                        More <i class="fas fa-arrow-circle-right"></i>
+                    </a>
+                </div>
+
+                <div class="home__info-overlay">
+                    <img src="images/b1.jpg" alt="" class="home__info-img">
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+
+    <!--=======About=========-->
+    <section class="about section" style="background-color: #D1D0D4;height: 75vh;" id="about">
+        <div class="about_container container grid">
+            <div class="about_data" data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000">
+                <h3><span style="color: black; font-weight: bolder;">___ Know Who We Are ___</span></h3><br>
+                <h2 class="section_title about_title" style="color:red">About ManUsIa™ <br></h2>
+                <p class="about_description" style="text-align: justify;color: #294A47; font-size: 20px;">Kambyan is a
+                    technology company that enables enterprises to do work through its sentient platform ManUsIa™.
+                    Realise the transformative benefits of UAS technology through our comprehensive solutions,
+                    Specialised Data and UAS & ROBOTICS engineering teams, highly skilled flight operators, data
+                    scientists and various personnel with specialised skill sets. We help businesses deploy autonomous
+                    solutions at scale, saving thousands of dangerous, dull, dirty and difficult man-hours and helping
+                    businesses thrive in these challenging times.
+                </p>
+                <!-- <a href="#" class="button">Read More</a> -->
+            </div>
+            <div class="about_img" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000"
+                style="padding-left: 40px;">
+                <div class="about_img-overlay">
+                    <img src="images/technology-3435575_960_720.webp" alt="" class="about_img-one">
+                </div>
+
+                <div class="about_img-overlay">
+                    <img src="images/handclick.jpg" alt="" class="about_img-two">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== Machine =========  -->
+    <section class="machine">
+        <div class="machine__img"></div>
+        <div class="machine_boxes" data-aos="fade-left"
+        data-aos-offset="100"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out">
+            <div class="machine_text">
+                <span><i class="fas fa-check"></i></span>
+                <h2>what we do</h2>
+            </div>
+            <div class="lined">
+                <span></span>
+                <h1>MACHINE</h1><br>
+                <h2>DEVELOPMENT</h2>
+                <p>We develop, operate & maintain a SENTIENT solution platform that <br> allows anyone to connect an
+                    Intelligent machine or application <br> designed for a specific purpose.</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- ======= Detail typing ====== -->
+    <section class="detail">
+        <div class="detail__img"></div>
+
+        <div class="detailcontainer">
+            <div class="detailboxes">
+                <div class="detailtext">
+                    <h2>01</h2>
+                    <h3>our mission</h3>
+                    <p>To replace the Dirty, Dull, Difficult & Dangerous (4D) manual jobs with highly trained
+                        Technopreneurs using autonomous systems.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="detailboxes">
+                <div class="detailtext">
+                    <h2>02</h2>
+                    <h3>our goals</h3>
+                    <p>Improve the socio-economical conditions of the rural people with our ManUsIA intelligent Digital
+                        Agricultural Sytems (MiDAS™)</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==================== footer ==================== -->
+    <footer class="footer section" style="background: #D1D0D4;">
+        <div class="footer_container container grid" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50"
+            data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false">
+            <div class="footer_content grid">
+                <div class="footer_data">
+                    <h3 class="footer_title"><img src="images/cropped-ManUsIA-Logo.png" alt=""></h3>
+                    <p class="footer_description">Established since 2017, The <br> Kambyan Network is helmed by <br>
+                        Arinaa Kambyan Berhad, which <br> develops, operates
+                        and maintains <br> the sentient platform called ManUsIA™ <br> (Man Using Intelligent
+                        Applications).
+                        <br>ManUsIA™ is a comprehensive Autonomous <br> Solution Platform, that enhances our daily<br>
+                        lives by autonomously managing any and <br>
+                        every application, gadgets and robots.
+                    </p>
+                    <div>
+                        <a href="https://www.facebook.com/" target="_blank" class="footer_social">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="footer_social">
+                            <i class="fab fa-instagram-square"></i>
+                        </a>
+                        <a href="https://in.linkedin.com/" target="_blank" class="footer_social">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="footer_data">
+                    <h3 class="footer_subtitle">HEAD QUATERS</h3>
+                    <h4 class="footer-h4">ARINAA KAMBYAN BERHAD</h4>
+                    <p>P-02-03, Gourmet Street, Pusat <br> Perdagangan ICON City, Jalan <br> SS8/39, Petaling Jaya,
+                        47300 <br> Selangor</p>
+                    <h3 class="footer_subtitle">GLOBAL COMMAND CENTRE</h3>
+                    <h4 class="footer-h4">GLOBAL AERO SERVICES SDN BHD</h4>
+                    <p>P-02-03, Gourmet Street, Pusat <br> Perdagangan ICON City, Jalan <br> SS8/39, Petaling Jaya,
+                        47300 <br> Selangor <br><br> Contact: +603 7865 6875 <br><br> Mail: admin@kambyan.net</p>
+                </div>
+
+                <div class="footer_data">
+                    <h3 class="footer_subtitle">NAVIGATIONAL</h3>
+                    <ul>
+                        <li class="footer_item">
+                            <a href="#" class="footer_link">Home</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#" class="footer_link">About Us</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#" class="footer_link">Contact</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#" class="footer_link">Services</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer_data">
+                    <h3 class="footer_subtitle">Usefull Links</h3>
+                    <ul>
+                        <li class="footer_item">
+                            <a href="https://www.kambyan.net/news-media" class="footer_link">LIMA '19</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="https://www.kambyan.net/news-media" class="footer_link">UMSA '19</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_rights">
+                <p class="footer_copy">&#169; 2021 ManUsIA™. All rights reserved.</p>
+                <div class="footer_terms">
+                    <a href="#" class="footer_terms-link">Terms & Agreements</a>
+                    <a href="#" class="footer_terms-link">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========= scroll up ============ -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="fas fa-arrow-up scrollup_icon"></i>
+    </a>
+
+
+    <!-- ==================== scroll Reveal ================== -->
+    <script src="scrollreveal.min.js"></script>
+
+
+
+    <!--js file-->
+    <script src="script.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

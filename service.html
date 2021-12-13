@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>service</title>
+    <link rel="icon" href="https://ml05hsq22bvh.i.optimole.com/HSbSpOQ-yrVxP89k/w:32/h:32/q:auto/https://manusia.ai/wp-content/uploads/2021/03/cropped-ManUsIA-Logo-1.png" sizes="32x32" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styleser.css">
+</head>
+
+<body>
+    <!--header-->
+    <header class="header" id="header">
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><img src="images/cropped-ManUsIA-Logo.png" alt=""></a>
+
+        <nav class="navbar" id="nav-bar">
+            <a href="index.html" class="nav_link active-link">Home</a>
+            <a href="about.html" class="nav_link active-link">About Us</a>
+            <a href="service.html" class="nav_link active-link">Services</a>
+            <a href="contact.html" class="nav_link active-link">Contact Us</a>
+            <a href="https://in.linkedin.com/" class="media active-link" target="_blank">
+                <i class="fab fa-linkedin"></i>
+                <a href="https://www.facebook.com/" class="media active-link" target="_blank">
+                    <i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/" class="media active-link" target="_blank">
+                    <i class="fab fa-instagram-square"></i></a>
+                <a href="#" class="nav_dark media active-link">
+                    <span class="change-theme-name">mode</span>
+                    <i class="fas fa-moon change-theme" id="theme-button"></i>
+                </a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+            <i class="fas fa-times" id="close"></i>
+        </form>
+    </header>
+
+    <!--loginform-->
+
+    <div class="bodycontainer">
+        <i class="fas fa-times" id="loginclose"></i>
+        <div class="logincontainer">
+            <div class="bluebg">
+                <div class="box signin">
+                    <h2>Already Have An Account ?</h2>
+                    <button class="signinBtn">Sign in</button>
+                </div>
+                <div class="box signup">
+                    <h2>Don't Have An Account ?</h2>
+                    <button class="signupBtn">Sign up</button>
+                </div>
+            </div>
+            <div class="formBx active">
+                <div class="form signinForm">
+                    <form>
+                        <h3>Sign In</h3>
+                        <input type="text" placeholder="Email Address" required style="text-transform: none;">
+                        <input type="password" placeholder="Password" required style="text-transform: none;">
+                        <span class="or-part">Or</span>
+                        <input type="password" placeholder="Hash Code" style="text-transform: none;">
+                        <input type="submit" value="Login">
+                        <br><a href="forgot.html" class="forgot">Forgot Password?</a>
+                    </form>
+                </div>
+
+                <div class="form signupForm">
+                    <form onsubmit="return validation()" name="captchaform">
+                        <!--==============-->
+                        <h3><span>Sign Up</span></h3>
+                        <input type="text" placeholder="Username" id="username" style="text-transform: none;">
+                        <span id="usererror" style="font-weight: bold; color: #fff; font-size: 1.3rem;"></span>
+
+                        <input type="email" placeholder="Email Address" id="email" style="text-transform: none;">
+                        <span id="emailerror" style="font-weight: bold; color: #fff; font-size: 1.3rem;"></span>
+
+                        <input type="password" placeholder="Password" id="password" style="text-transform: none;">
+                        <span id="passworderror" style="font-weight: bold; color: #fff; font-size: 1.3rem;"></span>
+
+                        <input type="password" placeholder="Confirm Password" id="cpassword"
+                            style="text-transform: none;">
+                        <span id="cpassworderror" style="font-weight: bold; color: #fff; font-size: 1.3rem;"></span>
+
+                        <input type="checkbox" id="remember">
+                        <label for="remember">I <span>a</span>gree <span>T</span>o <span>t</span>he <a href="#">Terms &
+                                Conditions</a></label>
+
+                        <div class="captcha">
+                            <div id="captchaValue">ssss</div>
+                            <input type="text" name="" placeholder="Enter Captcha" class="ci" id="inputCaptcha"
+                                style="text-transform: none;">
+                            <span id="captchaerror"
+                                style="font-weight: bold; color: #fff; font-size: 1.3rem; right: 0; margin-top: 2px; padding-left: 5px;"></span>
+                        </div>
+
+                        <input type="submit" value="Register" id="submitbutton">
+                        <a href="resend.html"><input type="button" value="Resend OTP"></a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- section -->
+    <section class="services">
+        <div class="services__home"></div>
+        <div class="services__img">
+            <img src="images/Phantom-31.png">
+        </div>
+
+        <div class="accordion">
+            <div class="services_contentBx"data-aos="flip-left"
+            data-aos-easing="linear"
+            data-aos-duration="1000">
+                <h1>what we do<span><i class="fas fa-check"></i></span></h1>
+                <div class="services_label">MiDAgS™️ - (ManUsIA™️ intelligent Digital Agricultural Systems)</div>
+                <div class="services_content">
+                    <p>MiDAgS™️ assists farmers and plantation owners in digitising and automating
+                        their entire plantation processes from planting, watering, fertilising, weeding,
+                        harvesting and transportation to the processing facilities. Our in-house designed
+                        and built Autonomous Harvesting, Fertilising, Weeding, and Transportation (Auto-HaFeWeT)
+                        solution is able to reduce costs while increasing yield with little to no upfront costs.
+                    </p>
+                </div>
+            </div>
+            <div class="services_contentBx"data-aos="flip-left"
+            data-aos-delay="700"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
+                <div class="services_label">MiAMS™️ - (ManUsIA™️ intelligent Aerospace Management Systems)</div>
+                <div class="services_content">
+                    <p>MiAMS™️ helps ease the tedious and repetitive processes involved in the Aerospace industry
+                        by adapting Robotic Process Automation (RPA) to ensure safety and quality is upheld at all
+                        times.
+                        When coupled with autonomous Unmanned Aerial Systems (UAS), MiAMS provides wholesome planning,
+                        documentation, flight operations, resource management, business management and business analysis
+                        as
+                        well as reporting to keep your operations flight ready all day, every day.
+                    </p>
+                </div>
+            </div>
+            <div class="services_contentBx"data-aos="flip-left"
+            data-aos-delay="1500"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
+                <div class="services_label">MiRAB™️ - (ManUsIA™️ intelligent Rural Area Broadband)</div>
+                <div class="services_content">
+                    <p> MiRAB™️ provides seamless telecommunication services in areas lacking connectivity for your day
+                        to day
+                        activities as well as your business needs. Agriculture, Farming, Fisheries, Mining .
+                        construction and
+                        many more areas without any telecommunication services can take advantage MiRAB™️. Ad-hoc
+                        networks can
+                        also be set up whenever necessary such as in disaster affected areas. Never be out of coverage
+                        again.
+                    </p>
+                </div>
+            </div>
+            <div class="services_contentBx"data-aos="flip-left"
+            data-aos-delay="2200"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
+                <div class="services_label">MiSSy™️ - (ManUsIA™️ - Intelligent Security &amp; Surveillance Systems)
+                </div>
+                <div class="services_content">
+                    <p> MiSSy™️ is your one stop solution for all your autonomous intelligent security and surveillance
+                        needs.
+                        Combining Robotic Process Automation (RPA) with Unmanned Aerial Systems (UAS) has lead to this
+                        wholesome
+                        solution at a fraction of typical costs. Golf courses, vast plantations, and sprawling
+                        warehouses can
+                        incorporate MiSSy into their arsenal of security and surveillance tools.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="word">
+        <div class="para__home"></div>
+        <div class="vertical">
+            <div class="vertical_line"data-aos="fade-right"
+            data-aos-delay="50"
+            data-aos-easing="linear"
+            data-aos-duration="1000"></div>
+        </div>
+        <div class="wordcontainer">
+            <h1 data-aos="fade-left" data-aos-delay="50" data-aos-duration="1200">we are also providing <span class="neon" data-text="below services">below services</span></h1>
+            <h2 data-text="COMPLETE DRONE SERVICES PROVIDED BY EXPERIENCED DRONE OPERATORS">COMPLETE DRONE SERVICES
+                PROVIDED BY EXPERIENCED DRONE OPERATORS</h2>
+            <p>From turnkey aerial inspections to a la carte training, analysis, and consulting; Measure offers its
+                customers the ability to choose the solution that best meets their needs.</p>
+            <a href="#" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1200">call for demo</a>
+        </div>
+    </section>
+
+
+    <!-- ====================== -->
+    <section>
+        <div class="wrap">
+            <div class="floatleft">
+                <div class="trainText">
+                    <label data-aos="fade-right"
+                    data-aos-delay="50"
+                    data-aos-easing="linear"
+                    data-aos-duration="1000">IR 4.0 Training Centre</label>
+
+                </div>
+                <div class="leftGroup" data-aos="fade-right"
+                data-aos-delay="50"
+                data-aos-easing="linear"
+                data-aos-duration="1000">
+                    <div class="span_color">
+                        <span>E</span>
+                    </div>
+                    <div class="paraStyle">
+                        <p>
+                            verything you need – equipment, software, training, and <br>support – to start and maintain
+                            an
+                            in-house drone program.
+                        </p>
+                    </div>
+                    <div class="iconGroup">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <button class="bttn">Read More</button>
+                    </div>
+                </div>
+
+                <!-- <div class="iconGroup"></div> -->
+            </div>
+            <div class="floatright">
+                <div data-aos="fade-left"
+                data-aos-delay="50"
+                data-aos-easing="linear"
+                data-aos-duration="1000">
+                    <img src="images/ir-training.png" class="uasImg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="wrap">
+            <div class="Floatleft">
+                <div class="trainText">
+                    <label style="padding-left: 60px;" data-aos="fade-right"
+                    data-aos-delay="50"
+                    data-aos-easing="linear"
+                    data-aos-duration="1000">Autonomous UAS training</label>
+
+                </div>
+                <div class="leftGroup"data-aos="fade-right"
+                data-aos-delay="50"
+                data-aos-easing="linear"
+                data-aos-duration="1000">
+                    <div class="span_color">
+                        <span>W</span>
+                    </div>
+                    <div class="paraStyle" style="padding-left: 60px;">
+                        <p>
+                            e’ll collect and analyze aerial data and provide an in-depth <br> report you can use to
+                            drive business decisions.
+                        </p>
+                    </div>
+                    <div class="iconGroup">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <button class="bttn">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Floatright">
+                <div data-aos="fade-left"
+                data-aos-delay="50"
+                data-aos-easing="linear"
+                data-aos-duration="1000">
+                    <img src="images/1.jpg" class="uasImg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="wrap">
+            <div class="floatleft">
+                <div class="trainText">
+                    <label style="padding-left: 70px;"data-aos="fade-right"
+                    data-aos-delay="50"
+                    data-aos-easing="linear"
+                    data-aos-duration="1000">Robotics/UAS/AI Research & <br> development</label>
+
+                </div>
+                <div class="leftGroup"data-aos="fade-right"
+                data-aos-delay="50"
+                data-aos-easing="linear"
+                data-aos-duration="1000">
+                    <div class="span_color">
+                        <span>W</span>
+                    </div>
+                    <div class="paraStyle" style="padding-left: 60px;">
+                        <p>
+                            e’ll process and analyze your drone data, translating it <br>into actionable intelligence to
+                            inform your business decisions.
+                        </p>
+                    </div>
+                    <div class="iconGroup">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <button class="bttn">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="floatright">
+                <div data-aos="fade-left"
+                data-aos-delay="50"
+                data-aos-easing="linear"
+                data-aos-duration="1000">
+                    <img src="images/2-1.jpg" class="uasImg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="wrap">
+            <div class="Floatleft">
+                <div class="trainText">
+                    <label style="padding-left: 100px;"data-aos="fade-right"
+                    data-aos-delay="50"
+                    data-aos-easing="linear"
+                    data-aos-duration="1000">Drone and AI Advisory Services</label>
+
+                </div>
+                <div class="leftGroup"data-aos="fade-right"
+                data-aos-delay="50"
+                data-aos-easing="linear"
+                data-aos-duration="1000">
+                    <div class="span_color">
+                        <span>R</span>
+                    </div>
+                    <div class="paraStyle" style="padding-left: 40px;">
+                        <p>
+                            obust analysis and recommendations for how your <br> business can best benefit from drone
+                            technology.
+                        </p>
+                    </div>
+                    <div class="iconGroup">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <button class="bttn">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Floatright">
+                <div data-aos="fade-left"
+                data-aos-delay="50"
+                data-aos-easing="linear"
+                data-aos-duration="1000">
+                    <img src="images/3.jpg" class="uasImg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer section" style="background: #D1D0D4;">
+        <div class="footer_container container grid" style="padding-top: 20px;" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50"
+            data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false">
+            <div class="footer_content grid">
+                <div class="footer_data">
+                    <h3 class="footer_title"><img src="images/cropped-ManUsIA-Logo.png" alt=""></h3>
+                    <p class="footer_description">Established since 2017, The <br> Kambyan Network is helmed by <br>
+                        Arinaa Kambyan Berhad, which <br> develops, operates
+                        and maintains <br> the sentient platform called ManUsIA™ <br> (Man Using Intelligent
+                        Applications).
+                        <br>ManUsIA™ is a comprehensive Autonomous <br> Solution Platform, that enhances our daily<br>
+                        lives by autonomously managing any and <br>
+                        every application, gadgets and robots.
+                    </p>
+                    <div>
+                        <a href="https://www.facebook.com/" target="_blank" class="footer_social">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="footer_social">
+                            <i class="fab fa-instagram-square"></i>
+                        </a>
+                        <a href="https://in.linkedin.com/" target="_blank" class="footer_social">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="footer_data">
+                    <h3 class="footer_subtitle">Head Quaters</h3>
+                    <h4 class="footer-h4">ARINAA KAMBYAN BERHAD</h4>
+                    <p>P-02-03, Gourmet Street, Pusat <br> Perdagangan ICON City, Jalan <br> SS8/39, Petaling Jaya,
+                        47300 <br> Selangor</p>
+                    <br>
+                    <h3 class="footer_subtitle">OPERATIONS COMMAND CENTRE</h3>
+                    <h4 class="footer-h4">GLOBAL AERO SERVICES SDN BHD</h4>
+                    <p>P-02-03, Gourmet Street, Pusat <br> Perdagangan ICON City, Jalan <br> SS8/39, Petaling Jaya,
+                        47300 <br> Selangor <br><br> Contact: +603 7865 6875 <br><br> Mail: admin@kambyan.net</p>
+                </div>
+
+                <div class="footer_data">
+                    <h3 class="footer_subtitle">NAVIGATIONAL</h3>
+                    <ul>
+                        <li class="footer_item">
+                            <a href="#" class="footer_link">Home</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#" class="footer_link">About Us</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#" class="footer_link">Contact</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="#" class="footer_link">Services</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer_data">
+                    <h3 class="footer_subtitle">Usefull Links</h3>
+                    <ul>
+                        <li class="footer_item">
+                            <a href="https://www.kambyan.net/news-media" class="footer_link">LIMA '19</a>
+                        </li>
+                        <li class="footer_item">
+                            <a href="https://www.kambyan.net/news-media" class="footer_link">UMSA '19</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_rights">
+                <p class="footer_copy">&#169; 2021 ManUsIA™. All rights reserved.</p>
+                <div class="footer_terms">
+                    <a href="#" class="footer_terms-link">Terms & Agreements</a>
+                    <a href="#" class="footer_terms-link">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- scroll up -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="fas fa-arrow-up scrollup_icon"></i>
+    </a>
+
+
+    <!-- <style>
+        .span_color {
+            font-size: 6rem;
+            color: crimson;
+
+        }
+
+        .leftGroup {
+            flex-direction: column;
+            padding-left: 160px;
+        }
+
+        .paraStyle {
+            color: white;
+            font-size: 1.3rem;
+            /* width: 80%; */
+            /* background-color: rgb(94, 82, 82); */
+            padding-left: 35px;
+            margin-top: -70px;
+            line-height: 26px;
+            font-weight: bold;
+
+        }
+
+        .trainText {
+            font-size: 2.5rem;
+            /* flex-direction: row; */
+            color: white;
+            align-items: center;
+            justify-content: center;
+            /* padding-right: 50vh; */
+            padding-right: 90px;
+            display: flex;
+            padding-top: 15%;
+            font-weight: 900;
+
+        }
+
+        .uasImg {
+            height: 360px;
+            width: 620px;
+            padding-top: 10px;
+            justify-content: center;
+            border-radius: 25px;
+            border-bottom-left-radius: 100px;
+            border-top-right-radius: 100px;
+            padding-left: 10px;
+
+        }
+
+        .iconGroup ul {
+            position: relative;
+            display: flex;
+        }
+
+        .iconGroup ul li {
+            position: relative;
+            list-style: none;
+        }
+
+        .iconGroup ul li a {
+            position: relative;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fff;
+            margin: 35px 10px;
+            text-decoration: none;
+            font-size: 22px;
+            border-radius: 50%;
+            color: #e2e2e2;
+            box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2) 2px 2px 5px rgba(0, 0, 0, 0.2);
+            transition: 0.5s;
+        }
+
+        .iconGroup ul li a:hover {
+            color: #999;
+            transform: translateY(-20px);
+            box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2) 2px 24px 10px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .iconGroup ul li a::before {
+            content: '';
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            border-radius: 50%;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .iconGroup ul li:nth-child(1) a::before {
+            background: #1877f2;
+        }
+
+        .iconGroup ul li:nth-child(2) a::before {
+            /* background: radial-gradient(circle at 50% 50%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf); */
+            background: rgb(94, 49, 49);
+        }
+
+        .iconGroup ul li:nth-child(3) a::before {
+            background: #2b3a94;
+        }
+
+        .iconGroup ul li:nth-child(4) a::before {
+            background: #25d566;
+        }
+
+        .iconGroup ul li:nth-child(5) a::before {
+            background: #f00;
+        }
+
+        .iconGroup ul li a .fab {
+            position: relative;
+            z-index: 1;
+            color: #fff;
+        }
+
+        .wrap {
+            width: 100%;
+            border-width: 0;
+        }
+
+        .floatleft {
+            float: left;
+            width: 50%;
+            background-color: pink;
+            height: 60vh;
+        }
+
+        .floatright {
+            float: right;
+            background-color: teal;
+            height: 60vh;
+            width: 50%;
+        }
+
+        .Floatleft {
+            float: left;
+            width: 50%;
+            background-color: blue;
+            height: 60vh;
+        }
+
+        .Floatright {
+            float: right;
+            background-color: red;
+            height: 60vh;
+            width: 50%;
+        }
+    </style> -->
+
+
+
+    <!-- ========================= -->
+    <script src="scrollreveal.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        const accordion = document.getElementsByClassName('services_contentBx');
+        for (i = 0; i < accordion.length; i++) {
+            accordion[i].addEventListener('click', function () {
+                this.classList.toggle('active')
+            })
+        }
+
+       // add another script 
+        // let servicestextion = document.querySelectorAll('.accordion .services_contentBx');
+
+        // servicestextion.forEach(acco =>{
+        //     acco.onclick = () =>{
+        //         servicestextion.forEach(subAcco => { subAcco.classList.remove('active') });
+        //         acco.classList.add('active');
+        //     }
+        // })
+    </script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+
+
+<!-- <script>
+    let servicestextion = document.querySelectorAll('.servicestext__ion-container .servicestext__ion');
+    
+    servicestextion.forEach(acco =>{
+        acco.onclick = () =>{
+            servicestextion.forEach(subAcco => { subAcco.classList.remove('active') });
+            acco.classList.add('active');
+        }
+    })
+</script> -->
+
+</html>

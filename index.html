@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ManUsIA™.ai</title>
+    <link rel="icon" href="https://ml05hsq22bvh.i.optimole.com/HSbSpOQ-yrVxP89k/w:32/h:32/q:auto/https://manusia.ai/wp-content/uploads/2021/03/cropped-ManUsIA-Logo-1.png" sizes="32x32" />
+    <!-- <link rel="icon" href="https://dev.manusia.ai/assets/images/favicon.png" type="image/gif" sizes="16x16"> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+<!--header-->  
+<header class="header" id="header">
+    
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"><img src="images/cropped-ManUsIA-Logo.png" alt=""></a>
+
+    <nav class="navbar" id="nav-bar">
+        <a href="#home" class="nav_link active-link">Home</a>
+        <a href="about.html" class="nav_link active-link">About Us</a>
+        <a href="service.html" class="nav_link active-link">Services</a>
+        <a href="contact.html" class="nav_link active-link">Contact Us</a>
+        <a href="https://in.linkedin.com/" class="media active-link" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        <a href="https://www.facebook.com/" class="media active-link" target="_blank">
+            <i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.instagram.com/" class="media active-link" target="_blank">
+            <i class="fab fa-instagram-square"></i></a>
+        <a href="#" class="nav_dark media active-link">
+            <span class="change-theme-name">mode</span> 
+            <i class="fas fa-moon change-theme" id="theme-button"></i>
+        </a>
+        </nav>
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
+     
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here...">
+        <label for="search-bar" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+</header>
+
+<!--loginform-->
+
+<div class="bodycontainer">     
+    <i class="fas fa-times" id="loginclose"></i>
+    <div class="logincontainer">  
+        <div class="bluebg">
+            <div class="box signin">
+                <h2>Already Have An Account ?</h2>
+                <button class="signinBtn">Sign in</button>
+            </div>
+            <div class="box signup">
+                <h2>Don't Have An Account ?</h2>
+                <button class="signupBtn">Sign up</button>
+            </div>
+        </div>
+        <div class="formBx active">    
+            <div class="form signinForm">
+                <form>
+                    <h3>Sign In</h3>
+                    <input type="text" placeholder="Email Address" required style="text-transform: none;">
+                    <input type="password" placeholder="Password" required style="text-transform: none;">
+                    <span class="or-part">Or</span>
+                    <input type="password" placeholder="Hash Code" style="text-transform: none;">
+                    <input type="submit" value="Login">
+                    <br><a href="forgot.html" class="forgot">Forgot Password?</a>
+                </form>
+            </div>
+
+            <div class="form signupForm">
+                <form onsubmit="return validation()" name="captchaform"> <!--==============-->
+                    <h3><span>Sign Up</span></h3>
+                    <input type="text" placeholder="Username" id="username" style="text-transform: none;">
+                    <span id="usererror" style="font-weight: bold; color: #fff; font-size: 1.3rem;"></span>
+                    
+                    <input type="email" placeholder="Email Address" id="email" style="text-transform: none;">
+                    <span id="emailerror" style="font-weight: bold; color: #fff; font-size: 1.3rem;"></span>
+                    
+                    <input type="password" placeholder="Password" id="password" style="text-transform: none;">
+                    <span id="passworderror" style="font-weight: bold; color: #fff; font-size: 1.3rem;"></span>
+                    
+                    <input type="password" placeholder="Confirm Password" id="cpassword" style="text-transform: none;">
+                    <span id="cpassworderror" style="font-weight: bold; color: #fff; font-size: 1.3rem;"></span>
+                    
+                    <input type="checkbox" id="remember">
+                    <label for="remember">I <span>a</span>gree <span>T</span>o <span>t</span>he <a href="#">Terms & Conditions</a></label>
+
+                    <div class="captcha">
+                        <div id="captchaValue">ssss</div>
+                        <input type="text" name="" placeholder="Enter Captcha" class="ci" id="inputCaptcha" style="text-transform: none;">
+                        <span id="captchaerror" style="font-weight: bold; color: #fff; font-size: 1.3rem; right: 0; margin-top: 2px; padding-left: 5px;"></span>
+                    </div>
+                    
+                    <input type="submit" value="Register" id="submitbutton">
+                    <a href="resend.html"><input type="button" value="Resend OTP"></a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<main class="main">
+<!--home-->
+    <section class="home" id="home">
+        <!-- <img src="images/images (2).jfif" alt="" class="home__img"> -->
+        <video src="images/y2mate.com - growing network connection around the world global internet concept blue version eogag0 1te  D_1080p.mp4" class="home__img" loop autoplay muted></video>
+        <div class="home__container container grid">
+            <div class="home__data">
+                <span class="home__data-subtitle"
+                 data-aos="fade-right"
+                 data-aos-delay="1000"
+                >Our Artificial Intelligence</span>
+                <h1 class="home__data-title">
+                <span data-aos="fade-right"
+                 data-aos-delay="1500"
+                 data-aos-duration="2000"
+                >REMOTELY PROCESSED</span>
+                <br><span data-aos="fade-right"
+                 data-aos-delay="2000"
+                 data-aos-duration="2000"
+                >AUTONOMOUS FIELD</span>
+                <br><span data-aos="fade-right"
+                 data-aos-delay="2500"
+                 data-aos-duration="2000"
+                >OPERATIONS (RPAs-FO)</span>
+                <br><span
+                 data-aos="fade-right"
+                 data-aos-delay="3000"
+                 data-aos-duration="2000"
+                >EXPERTS</span></h1>
+                <a href="#" class="button"
+                data-aos="fade-right"
+                data-aos-delay="3000"
+                data-aos-duration="2000"
+                >Call for Demo</a>
+            </div>
+            
+            <!-- <div class="home__info"
+            data-aos="fade-left"
+            data-aos-delay="3000"
+            data-aos-duration="2000">
+                <div>
+                    <span class="home__info-title">our success stories</span>
+                    <a href="#" class="button button--flex button--link home__info-button">
+                        More <i class="fas fa-arrow-circle-right"></i>
+                    </a>
+                </div>
+
+                <div class="home__info-overlay">
+                    <img src="images/b1.jpg" alt="" class="home__info-img">
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!--=======About=========-->
+    <section class="about section" id="about">
+        <div class="about_container container grid">
+            <div class="about_data" 
+            data-aos="fade-right"
+            data-aos-delay="50"
+            data-aos-duration="1000">
+                <h2 class="section_title about_title">We Deliver <br> Transformative <br> Intelligence <br></h2>
+                <h3><span>___ Time to Change ___</span></h3>  
+                <p class="about_description">We provide expert services for your organization’s mission critical assets using drone technology.
+                     Through state-of-the-art data collection and analysis, and comprehensive program software,
+                      we are able to deliver transformative intelligence that optimizes energy production, protects people, and improves infrastructure,
+                       all while simplifying maintenance and management processes.
+                    </p>  
+                    <a href="#" class="button">Read More</a>
+            </div>
+            <div class="about_img" 
+            data-aos="fade-left"
+            data-aos-delay="50"
+            data-aos-duration="1000">
+                <div class="about_img-overlay">
+                    <img src="images/drone2.jpg" alt="" class="about_img-one">
+                </div>
+
+                <div class="about_img-overlay">
+                    <img src="images/drone3.jpg" alt="" class="about_img-two">
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <!--=========== services ===========-->
+    <section class="service section" id="">
+        <div class="service-container"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        >
+            <h3 class="title">our mission & vision</h3>
+            <div class="servicebox-container"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            >
+                <div class="servicebox">
+                  <!-- <i class="fas fa-code"></i> -->
+                  <span class="number">01</span>
+                  <i class="fab fa-pagelines"></i>
+                    <h3>Digital Agriculture</h3>
+                    <p>Everything you need for your plantation 
+                       - we combine technology with detailed 
+                       data to improve harvests while using
+                        fewer resources.</p>
+                </div>
+                <div class="servicebox">
+                    <span class="number">02</span>
+                  <i class="fas fa-plane"></i>
+                    <h3>Aerospace Asset Management</h3>
+                    <p>We’ll collect and analyze aerial data and provide an in-depth report you can use to drive business decisions.</p>
+                </div>
+                <div class="servicebox">
+                    <span class="number">03</span>
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Autonomous UAS Training</h3>
+                    <p>We’ll collect and analyze aerial data and provide an in-depth report you can use to drive business decisions.</p>
+                  </div>
+                <div class="servicebox">
+                    <span class="number">04</span>
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>Mapping & Surveying</h3>
+                    <p>Progress moves us forward without marginalizing efforts to disrupt responsibility toward a potential the compromising.</p>
+                </div>
+                <div class="servicebox">
+                    <span class="number">05</span>
+                    <i class="fas fa-video"></i>
+                    <h3>Security & Surveillance</h3>
+                    <p>Progress moves us forward without marginalizing efforts to disrupt responsibility toward a potential the compromising.</p>
+                </div>
+                <div class="servicebox">
+                    <span class="number">06</span>
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Robotics and UAS Research</h3>
+                    <p>Progress moves us forward without marginalizing efforts to disrupt responsibility toward a potential the compromising.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--video-->
+    <section class="video section">
+        <div class="video-section-container">
+        <h3 class="section_title"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        >Talk to Us Video</h3>
+
+        <div class="video_container container"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false">
+            <p class="video_description">Put transformative intelligence to work for your business.<br> Contact us now or request a live drone demo.</p>
+        </div>
+        <div class="video_content">
+            <video id="video-file" src="images/rice.mp4" type="video/mp4" loop class="clip"
+            data-aos="zoom-in-up"
+            data-aos-offset="100"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="linear"
+            data-aos-mirror="true"
+            data-aos-once="false">
+                <!-- <source src="images/clip.mp4" type="video/mp4" loop 
+                class="clip"> -->
+            </video>
+            <!-- <button class="button button--flex video__button" id="video-button">
+                <i class="video__button-icon fas fa-play" id="video-icon"></i>
+            </button> -->
+        </div>
+        </div>
+    </section>
+
+    <!--logo-->
+
+    <section class="brand section" id="brand">
+          
+        <div id="container">
+            <h3 class="section_title" 
+             data-aos="fade-up"
+             data-aos-delay="50"
+             data-aos-duration="1000"
+             >Our Clients<br><span>Driving Technology</span></h3>
+            <div id="slider-container"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false">
+              <span onclick="slideRight()" class="btn"></span>
+                <div id="slider">
+                  <div class="slide"><span><img src="images/clientlogo1.jpg" alt=""></span></div>
+                  <div class="slide"><span><img src="images/clientlogo7.png" alt=""></span></div>
+                  <div class="slide"><span><img src="images/clientlogo8.png" alt=""><span></div>
+                  <div class="slide"><span><img src="images/clientlogo9.png" alt=""></span></div>
+                  <div class="slide"><span><img src="images/clientlogo3.png" alt=""></span></div>
+                  <div class="slide"><span><img src="images/clientlogo1.jpg" alt=""></span></div>
+                </div>
+              <span onclick="slideLeft()" class="btn"></span>
+            </div>
+        </div>
+    </section>
+
+    <!--discover director swiper-->
+    <section class="director section" id="director">
+        <h2 class="section_title"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false">Our Founders</h2>
+        <div class="swiper mySwiper"
+        data-aos="zoom-in-up"
+        data-aos-offset="100"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="linear"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        >
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/sudhir.webp">
+                    <div class="info">
+                        <h3>CAPT SUDHIR</h3>
+                        <p>Group Executive Director</p>
+                        <a href="#">contact</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/david.webp">
+                    <div class="info">
+                        <h3>DAVID CIRULLI</h3>
+                        <p>Group Enginerring Director</p>
+                        <a href="#">contact</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/Anand.webp">
+                    <div class="info">
+                        <h3>ANAND SAMUVEL</h3>
+                        <p>Founding Member</p>
+                        <a href="#">contact</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/RAJEE N.webp">
+                    <div class="info">
+                        <h3>RAJESHWARI NAIR</h3>
+                        <p>Group Finance Director</p>
+                        <a href="#">contact</a>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </section> 
+
+    <!--project image slide-->
+    <section class="project section" id="project">
+        <div class="project_container container grid">
+            <div class="project_data"
+            data-aos="fade-right"
+            data-aos-delay="50"
+            data-aos-duration="1000">
+                <h2 class="section_title project_title">We Deliver High Quality Data<br> To Drive Confident Decisions <br> For Your Specific Bussiness <br></h2>
+                <p class="project_description">Our experienced pilots and analysts have completed thousands of commercial flights across a wide variety of industries while maintaining an exceptional safety record.
+                    That Optimizes Energy Production, Protects People, And Improves Infrastructure, All While Simplifying Maintenance And Management Processes.
+                    </p>  
+                    <a href="#" class="button">Read More</a>
+            </div>
+            <div class="project_img"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+                <div class="img-slider">
+                    <div class="pslide active">
+                        <img src="images/oil.png" alt="">
+                        <div class="caption">
+                            <h2>ENERGY / OIL & GAS</h2>
+                        </div>
+                    </div>
+                    <div class="pslide">
+                        <img src="images/building.png" alt="">
+                        <div class="caption">
+                            <h2>BUILDING MANAGEMENT</h2>
+                        </div>
+                    </div>
+                    <div class="pslide">
+                        <img src="images/rural.png" alt="">
+                        <div class="caption">
+                            <h2>RURAL AREA BROADBAND</h2>
+                        </div>
+                    </div>
+                    <div class="pslide">
+                        <img src="images/digital.png" alt="">
+                        <div class="caption">
+                            <h2>DIGITAL AGRICULTURE</h2>
+                        </div>
+                    </div>
+                    <div class="pslide">
+                        <img src="images/logistic.png" alt="">
+                        <div class="caption">
+                            <h2>LOGISTIC & WAREHOUSING</h2>
+                        </div>
+                    </div>
+                    <div class="navigation">
+                        <div class="butn active"></div>
+                        <div class="butn"></div>
+                        <div class="butn"></div>
+                        <div class="butn"></div>
+                        <div class="butn"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+</main>
+
+<!-- footer -->
+<footer class="footer section">
+    <div class="footer_container container grid"
+    data-aos="fade-up"
+    data-aos-offset="100"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="false">
+        <div class="footer_content grid">
+            <div class="footer_data">
+                <h3 class="footer_title"><img src="images/cropped-ManUsIA-Logo.png" alt=""></h3>
+                <p class="footer_description">Established since 2017, The <br> Kambyan Network is helmed by <br> Arinaa Kambyan Berhad, which <br> develops, operates
+                    and maintains <br> the sentient platform called ManUsIA™ <br> (Man Using Intelligent Applications).
+                    <br>ManUsIA™ is a comprehensive Autonomous <br> Solution Platform, that enhances our daily<br> lives by autonomously managing any and <br>
+                    every application, gadgets and robots.
+                </p>
+                <div>
+                    <a href="https://www.facebook.com/" target="_blank" class="footer_social">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="footer_social">
+                        <i class="fab fa-instagram-square"></i>
+                    </a>
+                    <a href="https://in.linkedin.com/" target="_blank" class="footer_social">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="footer_data">
+                <h3 class="footer_subtitle">HEAD QUATERS</h3>
+                <h4 class="footer-h4">ARINAA KAMBYAN BERHAD</h4>
+                <p>P-02-03, Gourmet Street, Pusat <br> Perdagangan ICON City, Jalan <br> SS8/39, Petaling Jaya, 47300 <br> Selangor</p>
+                <br><h3 class="footer_subtitle">GLOBAL COMMAND CENTRE</h3>
+                <h4 class="footer-h4">GLOBAL AERO SERVICES SDN BHD</h4>
+                <p>P-02-03, Gourmet Street, Pusat <br> Perdagangan ICON City, Jalan <br> SS8/39, Petaling Jaya, 47300 <br> Selangor <br><br> Contact: +603 7865 6875 <br><br> Mail: admin@kambyan.net</p>
+            </div>
+
+            <div class="footer_data">
+                <h3 class="footer_subtitle">NAVIGATIONAL</h3>
+                <ul>
+                    <li class="footer_item">
+                        <a href="#" class="footer_link">Home</a>
+                    </li>
+                    <li class="footer_item">
+                        <a href="#" class="footer_link">About Us</a>
+                    </li>
+                    <li class="footer_item">
+                        <a href="#" class="footer_link">Contact</a>
+                    </li>
+                    <li class="footer_item">
+                        <a href="#" class="footer_link">Services</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer_data">
+                <h3 class="footer_subtitle">Usefull Links</h3>
+                <ul>
+                    <li class="footer_item">
+                        <a href="https://www.kambyan.net/news-media" class="footer_link">LIMA '19</a>
+                    </li>
+                    <li class="footer_item">
+                        <a href="https://www.kambyan.net/news-media" class="footer_link">UMSA '19</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_rights">
+            <p class="footer_copy">&#169; 2021 ManUsIA™. All rights reserved.</p>
+            <div class="footer_terms">
+                <a href="#" class="footer_terms-link">Terms & Agreements</a>
+                <a href="#" class="footer_terms-link">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- scroll up -->
+<a href="#" class="scrollup" id="scroll-up">
+    <i class="fas fa-arrow-up scrollup_icon"></i>
+</a>
+
+
+
+<script src="scrollreveal.min.js"></script>
+<script src="script.js"></script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+      slidesPerView: 'auto',
+      loop: true,
+      spaceBetween: 32,
+      centeredSlides: true,   
+      grabCursor: true,
+      coverflowEffect: {
+       rotate: 0,
+     },
+
+      
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+     },
+    });
+</script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>

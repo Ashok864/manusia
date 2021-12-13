@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="icon" href="https://ml05hsq22bvh.i.optimole.com/HSbSpOQ-yrVxP89k/w:32/h:32/q:auto/https://manusia.ai/wp-content/uploads/2021/03/cropped-ManUsIA-Logo-1.png" sizes="32x32" />
+    <link rel="stylesheet" href="styless.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+</head>
+<body>
+
+    <!--header-->  
+<header class="header" id="header">
+    
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"><img src="images/cropped-ManUsIA-Logo.png" alt=""></a>
+
+    <nav class="navbar" id="nav-bar">
+        <a href="index.html" class="nav_link active-link">Home</a>
+        <a href="about.html" class="nav_link active-link">About Us</a>
+        <a href="service.html" class="nav_link active-link">Services</a>
+        <a href="contact.html" class="nav_link active-link">Contact Us</a>
+        <a href="https://in.linkedin.com/" class="media active-link" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        <a href="https://www.facebook.com/" class="media active-link" target="_blank">
+            <i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.instagram.com/" class="media active-link" target="_blank">
+            <i class="fab fa-instagram-square"></i></a>
+        <a href="#" class="nav_dark media active-link">
+            <span class="change-theme-name">mode</span> 
+            <i class="fas fa-moon change-theme" id="theme-button"></i>
+        </a>
+        </nav>
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
+     
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here...">
+        <label for="search-bar" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+</header>
+
+<!--loginform-->
+
+<div class="bodycontainer">     
+    <i class="fas fa-times" id="loginclose"></i>
+    <div class="logincontainer">  
+        <div class="bluebg">
+            <div class="box signin">
+                <h2>Already Have An Account ?</h2>
+                <button class="signinBtn">Sign in</button>
+            </div>
+            <div class="box signup">
+                <h2>Don't Have An Account ?</h2>
+                <button class="signupBtn">Sign up</button>
+            </div>
+        </div>
+        <div class="formBx active">    
+            <div class="form signinForm">
+                <form>
+                    <h3>Sign In</h3>
+                    <input type="text" placeholder="Email Address" required style="text-transform: none;">
+                    <input type="password" placeholder="Password" required style="text-transform: none;">
+                    <span class="or-part">Or</span>
+                    <input type="password" placeholder="Hash Code" style="text-transform: none;">
+                    <input type="submit" value="Login">
+                    <br><a href="forgot.html" class="forgot">Forgot Password?</a>
+                </form>
+            </div>
+
+            <div class="form signupForm">
+                <form onsubmit="return validation()" name="captchaform"> <!--==============-->
+                    <h3><span>Sign Up</span></h3>
+                    <input type="text" placeholder="Username" id="username" style="text-transform: none;">
+                    <span id="usererror" style="font-weight: bold; color: #fff; font-size: 1.3rem;"></span>
+                    
+                    <input type="email" placeholder="Email Address" id="email" style="text-transform: none;">
+                    <span id="emailerror" style="font-weight: bold; color: #fff; font-size: 1.3rem;"></span>
+                    
+                    <input type="password" placeholder="Password" id="password" style="text-transform: none;">
+                    <span id="passworderror" style="font-weight: bold; color: #fff; font-size: 1.3rem;"></span>
+                    
+                    <input type="password" placeholder="Confirm Password" id="cpassword" style="text-transform: none;">
+                    <span id="cpassworderror" style="font-weight: bold; color: #fff; font-size: 1.3rem;"></span>
+                    
+                    <input type="checkbox" id="remember">
+                    <label for="remember">I <span>a</span>gree <span>T</span>o <span>t</span>he <a href="#">Terms & Conditions</a></label>
+
+                    <div class="captcha">
+                        <div id="captchaValue">ssss</div>
+                        <input type="text" name="" placeholder="Enter Captcha" class="ci" id="inputCaptcha" style="text-transform: none;">
+                        <span id="captchaerror" style="font-weight: bold; color: #fff; font-size: 1.3rem; right: 0; margin-top: 2px; padding-left: 5px;"></span>
+                    </div>
+                    
+                    <input type="submit" value="Register" id="submitbutton">
+                    <a href="resend.html"><input type="button" value="Resend OTP"></a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <!-- --- contact --- -->
+    <section class="Body_contact" id="contact us">         <!-- body - sectiontag used chng 'body_contact' -->
+        <div class="contactUs">
+            <div class="contact_title">
+                <h2>Get in Touch</h2>
+            </div>
+            <div class="contact_box">
+                <!-- form -->
+                <div class="contacts Forms">
+                    <h3>Send a Message</h3>
+                    <form onsubmit="return contactvalidations()" name="contactform">
+                        <div class="contact_Formbox">
+                            <div class="row50">
+                                <div class="InputBox">
+                                    <span>First Name</span>
+                                    <input type="text" placeholder="Enter first name" id="firstname" style="text-transform: none;">
+                                    <span id="firsterror" style="font-weight: 900; font-size: 1.8rem; color: crimson;"></span>
+                                </div>
+                                <div class="InputBox">
+                                    <span>Last Name</span>
+                                    <input type="text" placeholder="Enter last name" id="lastname" style="text-transform: none;">
+                                    <span id="lasterror" style="font-weight: 900; font-size: 1.8rem; color: crimson;"></span>
+                                </div>
+                            </div>
+
+                            <div class="row50">
+                                <div class="InputBox">
+                                    <span>Email</span>
+                                    <input type="email" placeholder="Enter your Mail" id="contactmail" style="text-transform: none;">
+                                    <span id="cemailerror" style="font-weight: 900; font-size: 1.8rem; color: crimson;"></span>
+                                </div>
+                                <div class="InputBox">
+                                    <span>Mobile</span>
+                                    <input type="number" placeholder="Mobile Number" id="contactmobile">
+                                    <span id="mobileerror" style="font-weight: 900; font-size: 1.8rem; color: crimson;"></span>
+                                </div>
+                            </div>
+
+                            <div class="row50">
+                                <div class="InputBox">
+                                    <span>Industry</span>
+                                    <select>
+                                        <option value="1">Agriculture</option>
+                                        <option value="2">Buildings & Constructions</option>
+                                        <option value="3">Energy / Oil & Gas</option>
+                                        <option value="4">Goverment</option>
+                                        <option value="5">Insurance</option>
+                                        <option value="6">Logistics & Warehousing</option>
+                                        <option value="7">Security & Enforcement</option>
+                                        <option value="8">Telecommunications</option>
+                                    </select>
+                                </div>
+                                <div class="InputBox">
+                                    <span>I am Contacting You About</span>
+                                    <select>
+                                        <option value="1">Advisory Services</option>
+                                        <option value="2">Drone Technology Demo</option>
+                                        <option value="3">Drone services</option>
+                                        <option value="4">General Inquiry</option>
+                                        <option value="5">Press/ Media Enquiries</option>
+                                        <option value="6">Training Services</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row100">
+                                <div class="InputBox">
+                                    <span>Message</span>
+                                    <textarea placeholder="write your message here..."></textarea>
+                                </div>
+                            </div>
+
+                            <div class="row100">
+                                <div class="InputBox">
+                                    <input type="submit" value="Send" id="contactsubmit">
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </form>
+                </div>
+                <!-- info -->
+                <div class="contacts Info">
+                    <h3>Contact Info</h3>
+                    <div class="InfoBox">
+                        
+                        <div>
+                            <span class="chngicon"><i class="fas fa-home"></i></span>
+                            <p><b>Head Quaters</b><br>ARINAA KAMBYAN BERHAD<br>T3 12-17, Tower 3, iSOVO Pusat<br>Perdagangan ICON City, Jalan SS8/39,<br>Petaling Jaya, 47300 Selangor</p>
+                        </div>
+                        <div>
+                            <span class="chngicon"><i class="fas fa-map-marker-alt"></i></span>
+                            <p><b>Global Command Centre</b><br>Global Aero Services SDN BHD<br>P-02-03, Gourmet Street, Pusat<br>Perdagangan ICON City, Jalan SS8/39,<br>Petaling Jaya, 47300 Selangor</p>
+                        </div>
+                        <div>
+                            <span><i class="far fa-envelope"></i></span>
+                            <a href="mailto:admin@kambyan.net">admin@kambyan.net</a>
+                        </div>
+                        <div>
+                            <span><i class="fas fa-phone-alt"></i></span>
+                            <a href="tel:+60378656875">+603 7865 6875</a>
+                        </div>
+        
+                    </div>
+                </div>
+                <!-- map -->
+                <div class="contacts map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15936.124523879213!2d101.613882!3d3.086366!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4c764e9315cf%3A0x1c79e5d7024a98df!2sIcon%20City%2C%2047300%20Petaling%20Jaya%2C%20Selangor%2C%20Malaysia!5e0!3m2!1sen!2sus!4v1637942409395!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <!-- ==================== footer ==================== -->
+<footer class="footer section" style="background: #D1D0D4;">
+    <div class="footer_container container grid"
+    data-aos="fade-up"
+    data-aos-offset="100"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="false">
+        <div class="footer_content grid">
+            <div class="footer_data">
+                <h3 class="footer_title"><img src="images/cropped-ManUsIA-Logo.png" alt=""></h3>
+                <p class="footer_description">Established since 2017, The <br> Kambyan Network is helmed by <br> Arinaa Kambyan Berhad, which <br> develops, operates
+                    and maintains <br> the sentient platform called ManUsIA™ <br> (Man Using Intelligent Applications).
+                    <br>ManUsIA™ is a comprehensive Autonomous <br> Solution Platform, that enhances our daily<br> lives by autonomously managing any and <br>
+                    every application, gadgets and robots.
+                </p>
+                <div>
+                    <a href="https://www.facebook.com/" target="_blank" class="footer_social">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="footer_social">
+                        <i class="fab fa-instagram-square"></i>
+                    </a>
+                    <a href="https://in.linkedin.com/" target="_blank" class="footer_social">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="footer_data">
+                <h3 class="footer_subtitle">Head Quaters</h3>
+                <h4 class="footer-h4">ARINAA KAMBYAN BERHAD</h4>
+                <p>P-02-03, Gourmet Street, Pusat <br> Perdagangan ICON City, Jalan <br> SS8/39, Petaling Jaya, 47300 <br> Selangor</p>
+                <h3 class="footer_subtitle">OPERATIONS COMMAND CENTRE</h3>
+                <h4 class="footer-h4">GLOBAL AERO SERVICES SDN BHD</h4>
+                <p>P-02-03, Gourmet Street, Pusat <br> Perdagangan ICON City, Jalan <br> SS8/39, Petaling Jaya, 47300 <br> Selangor <br><br> Contact: +603 7865 6875 <br><br> Mail: admin@kambyan.net</p>
+            </div>
+
+            <div class="footer_data">
+                <h3 class="footer_subtitle">NAVIGATIONAL</h3>
+                <ul>
+                    <li class="footer_item">
+                        <a href="#" class="footer_link">Home</a>
+                    </li>
+                    <li class="footer_item">
+                        <a href="#" class="footer_link">About Us</a>
+                    </li>
+                    <li class="footer_item">
+                        <a href="#" class="footer_link">Contact</a>
+                    </li>
+                    <li class="footer_item">
+                        <a href="#" class="footer_link">Services</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer_data">
+                <h3 class="footer_subtitle">Usefull Links</h3>
+                <ul>
+                    <li class="footer_item">
+                        <a href="https://www.kambyan.net/news-media" class="footer_link">LIMA '19</a>
+                    </li>
+                    <li class="footer_item">
+                        <a href="https://www.kambyan.net/news-media" class="footer_link">UMSA '19</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_rights">
+            <p class="footer_copy">&#169; 2021 ManUsIA™. All rights reserved.</p>
+            <div class="footer_terms">
+                <a href="#" class="footer_terms-link">Terms & Agreements</a>
+                <a href="#" class="footer_terms-link">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- ========= scroll up ============ -->
+<a href="#" class="scrollup" id="scroll-up">
+    <i class="fas fa-arrow-up scrollup_icon"></i>
+</a>
+
+
+<!-- ==================== scroll Reveal ================== -->
+<script src="scrollreveal.min.js"></script>
+
+
+
+<!--js file-->
+<script src="script.js"></script>
+
+<script>
+    AOS.init();
+</script>
+
+
+
+</body>
+</html>
